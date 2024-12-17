@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <title>Quiz Interactive</title>
+ <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+   
+    <div class="home" id="home">
+      <h1>Bienvenue au Quiz</h1>
+<img src="./image/photo2.jpg" width="100%" height="70%">
+  <div class="butt">
+  <button id="startQuiz">Commencer le Quiz</button></div>
+    </div>
+
+    <!-- Boîte d'information -->
+    <div class="info" id="info" style="display: none;">
+      <h4>régle du Quiz</h4>
+      <p>voua avez 15 secondes pour répendre à chaque question,
+        et chaque bonne répense rapporte un point
+        si le moment est trop tard pour répendre à la question ,
+        cela est considéré comme une répense incorrecte
+      </p>
+      <div class="container">
+      <button id="startBtn">Démarrer</button>
+      <button id="quitBtn">Quitter</button></div>
+    </div>
+
+    <!-- Interface de Quiz -->
+    <div class="quiz" id="quiz" style="display: none;">
+      <div class="question-section">
+        <div class="question-number"></div>
+        <div class="question-text"></div>
+      </div>
+      <div class="options"></div>
+      <div class="timer">
+        <span id="timerText">Temps restant :</span>
+        <span id="timerCount">15</span>
+      </div>
+      <button id="nextBtn" style="display: none;">Suivant</button>
+    </div>
+
+    <!-- Résultats -->
+    <div class="resultat" id="resultat" style="display: none;">
+      <h2>Résultats</h2>
+      <p>Votre score : <span id="score">0</span></p>
+      <button id="retryBtn">Rejouer</button>
+      <button id="exitBtn">Quitter</button>
+    </div>
+  </div>
+  <script src="javascript/test.js"></script>
+</body>
+
+</html>
